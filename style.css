@@ -1,82 +1,91 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  background: #1a1a2e;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #fafafa;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
 .box {
-  background: #16213e;
-  padding: 30px;
-  border-radius: 10px;
-  width: 360px;
-  color: #eee;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 32px;
+  width: 100%;
+  max-width: 380px;
 }
 
 h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 24px;
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 22px;
-  color: #e94560;
 }
 
 .output {
   display: flex;
   gap: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .output input {
   flex: 1;
-  padding: 10px;
-  background: #0f3460;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 14px;
+  padding: 10px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #333;
+  background: #f9f9f9;
+  outline: none;
 }
 
 .output button {
   padding: 10px 14px;
-  background: #e94560;
+  background: #111;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
+  font-size: 13px;
   cursor: pointer;
 }
+
+.output button:hover { background: #333; }
 
 .options {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-bottom: 20px;
-  font-size: 14px;
+  margin-bottom: 24px;
+  font-size: 13px;
+  color: #444;
 }
 
 .options label {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 input[type="range"] {
   width: 100%;
   margin-top: 6px;
+  accent-color: #111;
 }
 
 .generate {
   width: 100%;
-  padding: 12px;
-  background: #e94560;
+  padding: 11px;
+  background: #111;
   color: #fff;
   border: none;
-  border-radius: 6px;
-  font-size: 16px;
+  border-radius: 8px;
+  font-size: 14px;
   cursor: pointer;
 }
 
-.generate:hover { background: #c73652; }
+.generate:hover { background: #333; }
